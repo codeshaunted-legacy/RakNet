@@ -11,6 +11,10 @@
 #include "NativeFeatureIncludes.h"
 #if _RAKNET_SUPPORT_TwoWayAuthentication==1
 
+// this is needed to compile under MinGW
+// code's haunted
+#include <windows.h>
+
 #include "TwoWayAuthentication.h"
 #include "Rand.h"
 #include "GetTime.h"
